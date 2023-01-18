@@ -9,7 +9,9 @@ const MainLayout: FC<{ children: ReactNode }> = ({ children }) => {
   const { connected } = useWallet()
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container}   style={{
+      backgroundColor: 'black'
+    }}>
       <Head>
         <title>DestinyBuildor</title>
         <meta name="The NFT Collection for Buildoors" />

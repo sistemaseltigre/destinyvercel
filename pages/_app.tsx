@@ -5,7 +5,7 @@ import { extendTheme } from "@chakra-ui/react"
 import WalletContextProvider from '../components/WalletContextProvider'
 import { WorkspaceProvider } from "../context/Anchor"
 const colors = {
-  background: "#1F1F1F",
+  background: "#111",
   accent: "#833BBE",
   bodyText: "rgba(255, 255, 255, 0.75)",
   secondaryPurple: "#CB8CFF",

@@ -4,7 +4,7 @@ import { PublicKey, Transaction } from "@solana/web3.js"
 import { useCallback, useEffect, useState } from "react"
 import * as anchor from "@project-serum/anchor"
 import { useWorkspace } from "../context/Anchor"
-let workspace = useWorkspace()
+
 
 import {
   TOKEN_PROGRAM_ID,
@@ -34,7 +34,7 @@ export const StakeOptionsDisplay = ({
 
   const [isStaking, setIsStaking] = useState(isStaked)
   const [nftTokenAccount, setNftTokenAccount] = useState<PublicKey>()
-
+  let workspace = useWorkspace()
   const checkStakingStatus = useCallback(async () => {
     if (!walletAdapter.connected ||
       !walletAdapter.publicKey ||

@@ -15,6 +15,7 @@ import { useEffect, useState } from "react"
 import { ItemBox } from "../components/ItemBox"
 import MainLayout from "../components/MainLayout"
 import { StakeOptionsDisplay } from "../components/StakeOptionsDisplay"
+import background from "../public/Assets/home-background.svg";
 
 const Stake: NextPage<StakeProps> = ({ mint, imageSrc }) => {
   const [isStaking, setIsStaking] = useState(false)

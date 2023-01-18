@@ -38,11 +38,15 @@ const WorkspaceProvider = ({ children }: any) => {
       {children}
     </WorkspaceContext.Provider>
   )
+
+  
 }
 
 const useWorkspace = (): WorkSpace => {
   return useContext(WorkspaceContext)
-}
+
+} 
+
 
 //http://localhost:3000/newMint?mint=EKtEsv41fPXB1U3zgkNB3Sc5CBWTVuSeYxXDW8ZyEkym
 export { WorkspaceProvider, useWorkspace }
